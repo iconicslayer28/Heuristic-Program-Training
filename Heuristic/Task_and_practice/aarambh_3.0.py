@@ -1,4 +1,4 @@
-import random 
+import random # Random is imported. 
 
 heading = '''Welcome to AARAMBH 3.0'''
 print(heading.center(50, ))
@@ -7,14 +7,18 @@ print("-------------------------------------------------")
 print('''This is more than a fest—it's a feeling, an emotion, and a memory in the making!'''.center(50, ))
 print("Good vibes, great company, and a whole lot of fun—welcome to the ultimate celebration!".center(20, ))
 print("-------------------------------------------------")
+
+
+# Details will be entered by the input function. 
+
 Name = input("Enter your name: ")
 cl = input("Enter your Course Year: ")
 field = input("Enter your field: ")
 
-print("List of Events and Days ")
-print("1. Tie Day")
-print("2. Mismatch Day")
-print("3. Traditional Day")
+print("List of Events and Days ")              # They can be printed in this manner also.   
+print("1. Tie Day")                            # print("\n1.'Tie Day'\n2. 'Mismatch Day'\n3. 'Traditional Day'\n4. 'Twinning day' \n 5. 'Gang Day' \n 6. 'Bollywood Day' \n7. 'Kratex' ") 
+print("2. Mismatch Day")                        
+print("3. Traditional Day")            
 print("4. Twining Day")
 print("5. Gang Day")
 print("6. Bollywood Day")
@@ -22,12 +26,12 @@ print("7. Kratex ")
 
 
 
-choice = int(input("Enter your choice:"))
+choice = int(input("Enter your choice:"))        # Choice of the events can be picked from the above list in integer form. 
 
 if choice == 1:
     age = int(input("Enter your age: "))
     
-    if age<= 0:
+    if age<= 0:            # Age less than or equal to zero won't be accepted here. 
         print("Invalid age.")
     elif age<= 20:
         print("Please visit the Aarambh fest on 17 feb for tie day.")
@@ -39,12 +43,12 @@ if choice == 1:
          print("A tie is just a fancy leash to keep us from running away from responsibilities!")
 
 if choice == 2:
-        age = int(input("Enter your age: "))
+        age = int(input("Enter your age: "))                # Age is just an option here no specific use. 
         print("Please visit the Aarambh fest on 18 feb for mismatch day.")
         
-        randNo = random.randint(1,3)
+        randNo = random.randint(1,3)                # randNo is the vaiable assigned for picking the random number between 1 and 3. Th enumbers are picked by the random function itself that was impoted in the 1st line.  
         if randNo == 1:
-            print("If fashion is an art, consider me abstract!")
+            print("If fashion is an art, consider me abstract!")            # For printing the different cheesy lines the randint i.e. an built-in function of python is used. 
         elif randNo ==2: 
             print("We may not match, but we’re a perfect pair!")
         elif randNo ==3:
@@ -103,7 +107,7 @@ if choice == 7:
     elif randNo == 3:
         print("Turn up the volume, lose yourself in the vibe—KRATEX is about to take you on a sonic ride!")
 else: 
-    if choice != choice:
+    if choice != choice:            # If the choice is unmatched it will throw this particular line. 
         print("You made an invalid choice.")
 print("--------------------------------------------")
-print(f"Thank you for participating in Aarambh 3.0 *{Name}*.\n You have participated in *{choice}* event.")
+print(f"Thank you for participating in Aarambh 3.0 *{Name}*.\n You have participated in *{choice}* event.")            # The choice line is optional. 
