@@ -2,7 +2,7 @@ saranash = "Python based calculator"
 print(saranash.center(50, ))
 
 
-def div (a,b):
+def div (a,b):                # Def function is used for storing the data of the calculation. Fpr all the methods. 
     return a / b
 
 def mul (a,b):
@@ -80,8 +80,8 @@ def main():
         elif choice == 1:
             a = float(input("Enter the first number: "))
             b = float(input("Enter the second number: "))
-            # print(f"The division of {a} and {b} is {div(a,b)}")
-            print(f" {a} / {b} = {div(a,b)}" )
+            # print(f"The division of {a} and {b} is {div(a,b)}")        # This is also an way to use the f string (formatted string) in print. 
+            print(f" {a} / {b} = {div(a,b)}" )                          # f string is used for replacing the value of whatever variable is used in {}. 
 
         elif choice == 2:
             a = float(input("Enter the first number: "))
@@ -90,7 +90,7 @@ def main():
                 print("The denominator can't be negative, since the value will be infinite.")
             else:
                 # print(f"The multiplication of {a} and {b} is {mul(a,b)}")
-                print(f" {a} * {b} = {mul(a,b)}" )
+                print(f" {a} * {b} = {mul(a,b)}" )              
 
         elif choice == 3:
             a = float(input("Enter the first number: "))
@@ -115,11 +115,11 @@ def main():
             print(f" {a}^3 = {cb(a)}" )
 
         elif choice == 7:
-            a = float(input("Enter the first number: "))
+            a = float(input("Enter the first number: "))                 # This can throw an incorrect answer. 
             # print(f"The square root of {a} is {cb(a)}")
             print(f" {a}^(1/2)= {sqrt(a)}" )
 
-        elif choice == 8:
+        elif choice == 8:                                                # This can throw an incorrect value.
             a = float(input("Enter the first number: "))
             # print(f"The cube root of {a} is {cb(a)}")
             print(f" {a}^(1/3) = {cbrt(a)}" )
@@ -149,7 +149,7 @@ def main():
             a = float(input("Enter the side of Cube: "))
             print(f"The Volume Cube {a} cm={Vcube(a)} cm")
 
-        # elif choice == 14:
+        # elif choice == 14:                                # It can also throw an error. 
         #     a = float(input("Enter the length of Cuboid: "))
         #     b = float(input("Enter the breadth of Cuboid: "))
         #     b = float(input("Enter the height of Cuboid: "))
