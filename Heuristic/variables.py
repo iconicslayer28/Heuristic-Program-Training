@@ -13,7 +13,7 @@ print("The sum is:", A+B)
 
 a = ''' Pyhton is human readable language.
         static codes changes as per the users''' # String which contain more than one line we can use triple quotes. 
-b = "Videocon"       # It's also acceptable but in single line.   
+b = "Videocon"       # It's also acceptable(for double cotes) but in single line.
 print(a)
 print(b) 
 
